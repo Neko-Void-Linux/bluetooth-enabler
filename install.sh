@@ -1,5 +1,5 @@
 #! /usr/bin/env bash
-xbps-install -Sy bluez blueman bluetui
+xbps-install -Sy bluez blueman bluetui libspa-bluetooth
 ln -s /etc/sv/bluetoothd /var/service/
 sv up bluetoothd
 sv start bluetoothd
